@@ -1,4 +1,4 @@
 ProjectScaffold
 ===============
 
-MEAN Web Project Scafold with Foundation Sass
+MEAN Web Project Scaffold with Foundation Sass
