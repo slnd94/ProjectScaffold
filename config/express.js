@@ -8,9 +8,14 @@ var bodyParser = require('body-parser');
 var compress = require('compression');
 var methodOverride = require('method-override');
 
-module.exports = function(app, config) {
+module.exports = function(app, config) {  
+  app.engine('html', require('hogan-express'));
+  app.enable('view cache');
+
   app.set('views', config.root + '/app/views');
-  app.set('view engine', 'ejs');
+  app.set('view engine', 'html');
+  app.set('layout', 'layout');
+  app.set('partials', { header: 'header', footer: 'footer' });
 
   // app.use(favicon(config.root + '/public/img/favicon.ico'));
   app.use(logger('dev'));
