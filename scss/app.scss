@@ -1,0 +1,12 @@
+@charset "UTF-8";
+//
+@import "sass-import-once";
+
+// Import Foundation
+@import "foundation/functions";
+@import "foundation/settings";
+@import "foundation";
+@import "normalize";
+
+// Import project-specific extensions, overrides and classes
+@import "project/project";
