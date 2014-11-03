@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+	{{> header}}
+	<body>
+		{{> menu}}
+		<div class="row">
+			<div class="small-12 medium-12 large-12 columns">
+				header
+			</div>
+		</div>
+
+		<div class="container" style="height:5000px;">
+			{{{ yield }}}
+		</div>
+	</body>
+	{{> footer}}
+</html>
