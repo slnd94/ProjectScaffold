@@ -15,7 +15,12 @@ module.exports = function(app, config) {
   app.set('views', config.root + '/app/views');
   app.set('view engine', 'html');
   app.set('layout', 'shared/_layout');
-  app.set('partials', { header: 'shared/_header', footer: 'shared/_footer', menu: 'shared/_menu' });
+  app.set('partials', 
+    { 
+      header: 'shared/_header', 
+      footer: 'shared/_footer', 
+      menu: 'shared/_menu' 
+    });
 
   // app.use(favicon(config.root + '/public/img/favicon.ico'));
   app.use(logger('dev'));
